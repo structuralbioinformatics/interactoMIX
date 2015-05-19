@@ -10,14 +10,18 @@
         <title>interactoMIX</title>
     </head>
     <body ng-app="interactomix" ng-controller="MixController as mc">
-        <div class="row tall">
+        <div class="row">
             <div class="col-xs-1"></div>
-            <div class="col-xs-10 tall">
+            <div class="col-xs-10">
                 <div class="row main">
-                    <div id="bullseye" class="col-xs-6 tall">
+                    <div id="bullseye" class="col-xs-6">
                         <bulls-eye></bulls-eye>
                     </div>
-                    <div class="col-xs-6">{{status}} - {{server[status]}}</div>
+                    <div class="col-xs-6">
+                      <!--   {{status}} - {{server[status]}}<br/>
+                        {{content[server[status]]}} -->
+                        <server-info></server-info>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-1"></div>
@@ -31,7 +35,9 @@
             {{mc.currentDate() | date:'yyyy'}}
         </div>
         <script type="text/javascript" src="app/vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="app/vendor/angular-sanitize/angular-sanitize.min.js"></script>
         <script type="text/javascript" src="app/self/js/bullseye.js"></script>
+        <script type="text/javascript" src="app/self/js/box.js"></script>
         <script type="text/javascript" src="app/self/js/app.js"></script>
     </body>
 </html>

@@ -1,0 +1,73 @@
+{
+    "intro":    {
+        "title": "interactoMIX",
+        "main" : "Lorem ipsum dolor sit amet, ne qui debitis argumentum, ea tamquam fastidii vivendum quo, vim inimicus principes cu. Detraxit voluptatibus an quo. Vis eros dicta fuisset ut. In sit autem luptatum. Pro enim praesent eu, viris probatus in usu. Cibo mandamus no est. Mel minim molestiae ne. Sit at vitae quando alterum. Tamquam probatus eu vis, ullum adversarium ex nec. Nam an evertitur complectitur, et fugit deseruisse dissentiet mel, iudico dicunt phaedrum cu pro. Cum wisi delectus ne. Eam feugiat oportere in. Per id voluptua patrioque. At vel noster urbanitas interpretaris, autem dolore legendos ea pro. Suas placerat ne eum. Amet vide tincidunt est ne, id vim modus aeterno persius, eu mea enim fabulas accumsan. Labitur ceteros fuisset ei mea, in fastidii pericula cum. Homero veritus splendide an sed, volumus theophrastus ea mea, per ad ignota essent. Quot epicurei consequuntur duo ut, minim scripserit cum te. Amet vide facilisis duo te, debet equidem imperdiet vim ad. Voluptatum constituam signiferumque eam id, eirmod prompta principes ei nec. Perfecto principes sea in, doming disputationi mediocritatem sea an. Eros appetere atomorum ex qui. Decore audire reprimique pro ad, eu eam eius apeirian. Vide dicta in vix, tale etiam nostrud ut mei. Et brute dicta equidem pri. Omnesque recteque quo an, cum falli oblique meliore no, sed te essent mollis.",
+        "cite" : ""
+    },
+    "biana":    {
+        "title": "BIANA",
+        "main" : "",
+        "url"  : "http://sbi.imim.es/web/index.php/research/servers/biana?page=biana.server",
+        "cite" : "http://dx.doi.org/10.1186/1471-2105-11-56"
+    },
+    "bips":     {
+        "title": "BIPS",
+        "main" : "",
+        "url"  : "http://sbi.imim.es/web/index.php/research/servers/bips",
+        "cite" : "http://dx.doi.org/10.1093/nar/gks553"
+    },
+    "iloops":   {
+        "title": "iLoops",
+        "main" : "",
+        "url"  : "http://sbi.imim.es/iLoopsServer/",
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btt401"
+    },
+    "guildify": {
+        "title": "GUILDify",
+        "main" : "",
+        "url"  : "http://sbi.imim.es/web/GUILDify.php",
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu092"
+    },
+    "modlink":  {
+        "title": "ModLink<sup>+</sup>",
+        "main" : "",
+        "url"  : "http://sbi.imim.es/modlink/",
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btp238"
+    }, 
+    "vorffip":  {
+        "title": "VORFFIP",
+        "main" : "",
+        "url"  : "www.bioinsilico.org/VORFFIP/",
+        "cite" : "http://dx.doi.org/10.1186/1471-2105-12-352"
+    },
+    "mvorffip": {
+        "title": "M-VORFFIP",
+        "main" : "",
+        "url"  : "www.bioinsilico.org/MVORFFIP/",
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/bts269"
+    },
+    "vdock":    {
+        "title": "V-D<sup>2</sup>OCK",
+        "main" : "",
+        "url"  : "http://www.bioinsilico.org/VD2OCK",
+        "cite" : "http://dx.doi.org/10.1371/journal.pone.0118107"
+    },
+    "pipred":   {
+        "title": "PiPreD",
+        "main" : "",
+        "url"  : "http://www.bioinsilico.org/PIPRED",
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu838"
+    },
+    "pcrpidb":  {
+        "title": "PCRPi-DB",
+        "main" : "",
+        "url"  : "http://www.bioinsilico.org/PCRPIDB",
+        "cite" : "http://dx.doi.org/10.1093/nar/gkq1068"
+    },
+    "pcpriw":   {
+        "title": "PCPRi-W",
+        "main" : "",
+        "url"  : "http://www.bioinsilico.org/PCRPi",
+        "cite" : "http://dx.doi.org/10.1371/journal.pone.0012352"
+    }
+}

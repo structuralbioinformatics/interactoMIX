@@ -2,15 +2,15 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-19 16:54:36
+* @Last Modified time: 2015-05-20 00:17:47
 */
 html {
   position: relative;
-  height: 100%;
+  height:   100%;
 }
 body {
   background-color: #cfced0;
-  height: 100%;
+  height:           100%;
 }
 body:before {
     content:    "";
@@ -22,25 +22,113 @@ body:before {
     z-index:    1000;
 }
 
-.tall {
-    height: 100%;
-}
-
 .main {
-    padding-top: 5px;
-    display: table;
-    width: 100%;
-    height: 100%;
+    padding-top: 35px;
+    display:     table;
+    width:       100%;
+    height:      100%;
 }
 
 #bullseye {
-    font-family: 'Nunito';
-    font-weight: 700;
-    display: table-cell;
+    font-family:    'Nunito';
+    font-weight:    700;
+    display:        table-cell;
     vertical-align: middle;
 }
 #bullseye svg {
     cursor: pointer;
+}
+
+.box {
+    border-radius:         8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius:    8px;
+    -ms-border-radius:     8px;
+    -o-border-radius:      8px;
+    -webkit-box-shadow:    0 2px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:       0 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:            0 2px 3px rgba(0, 0, 0, 0.1);
+    display:              -moz-inline-box;
+    -moz-box-orient:      vertical;
+    display:              inline-block;
+    width:                100%;
+    height:               485px;
+    background:           #EBEBEB;
+    border:               1px solid black;
+    margin-top:           6px;
+    position:             relative;
+    padding-top:          60px;
+    padding-left:         10px;
+    padding-right:        10px;
+    padding-bottom:       60px;
+    font-family:          'Nunito';
+    font-weight:          400;
+}
+.inner-content {
+    display:  inline-block;
+    position: relative;
+    overflow: auto;
+    height:   100%;
+    width:    100%;
+}
+
+.horiz-flag {
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:    0px 1px 1px rgba(0, 0, 0, 0.35);
+    box-shadow:         0px 1px 1px rgba(0, 0, 0, 0.35);
+    display:            -moz-inline-box;
+    -moz-box-orient:    vertical;
+    display:            inline-block;
+    vertical-align:     middle;
+    height:             40px;
+    line-height:        40px;
+    position:           absolute;
+    text-align:         center;
+    color:              white;
+    font-weight:        700;
+    font-size:          25px;
+    width:              101%;
+    left:               -2px;
+}
+.flag-top {
+    top:                15px;
+    background-image:   -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9FBFDC), color-stop(100%, #3C74A6));
+    background-image:   -webkit-linear-gradient(#9FBFDC, #3C74A6);
+    background-image:   -moz-linear-gradient(#9FBFDC, #3C74A6);
+    background-image:   -o-linear-gradient(#9FBFDC, #3C74A6);
+    background-image:   -ms-linear-gradient(#9FBFDC, #3C74A6);
+    background-image:   linear-gradient(#9FBFDC, #3C74A6);
+}
+.flag-bottom {
+    bottom:      15px;
+    font-family: "Share Tech Mono";
+    background-image:   -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7C9F5E), color-stop(100%, #355E3B));
+    background-image:   -webkit-linear-gradient(#7C9F5E, #355E3B);
+    background-image:   -moz-linear-gradient(#7C9F5E, #355E3B);
+    background-image:   -o-linear-gradient(#7C9F5E, #355E3B);
+    background-image:   -ms-linear-gradient(#7C9F5E, #355E3B);
+    background-image:   linear-gradient(#7C9F5E, #355E3B);
+}
+.flag-bottom a{
+    color: white;
+}
+.flag-bottom a:hover{
+    color: #cfced0;
+}
+.flag-half-left {
+    width: 50%;
+    float: left;
+    background-image:   -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #E0725F), color-stop(100%, #E1293B));
+    background-image:   -webkit-linear-gradient(#E0725F, #E1293B);
+    background-image:   -moz-linear-gradient(#E0725F, #E1293B);
+    background-image:   -o-linear-gradient(#E0725F, #E1293B);
+    background-image:   -ms-linear-gradient(#E0725F, #E1293B);
+    background-image:   linear-gradient(#E0725F, #E1293B);
+
+}
+.flag-half-right {
+    width: 50%;
+    float: right;
 }
 
 .footer {
