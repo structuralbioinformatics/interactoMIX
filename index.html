@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,700'  rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="app/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="app/self/css/app.css">
+        <title>interactoMIX</title>
+    </head>
+    <body ng-app="interactomix" ng-controller="MixController as mc">
+        <div class="row tall">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 tall">
+                <div class="row main">
+                    <div id="bullseye" class="col-xs-6 tall">
+                        <bulls-eye></bulls-eye>
+                    </div>
+                    <div class="col-xs-6">{{status}} - {{server[status]}}</div>
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <div class="footer">
+            A joined effort of the 
+            <a href="http://sbi.imim.es" target="_blank">SBI</a> and 
+            the <a href="http://www.bioinsilico.org/" target="_blank">Bioinsilico</a> Labs.
+            Powered by
+            <a href="https://angularjs.org/" target="_blank">AngularJS</a>.
+            {{mc.currentDate() | date:'yyyy'}}
+        </div>
+        <script type="text/javascript" src="app/vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="app/self/js/bullseye.js"></script>
+        <script type="text/javascript" src="app/self/js/app.js"></script>
+    </body>
+</html>
