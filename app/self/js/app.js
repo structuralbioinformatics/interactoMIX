@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:25:18
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-19 22:59:20
+* @Last Modified time: 2015-05-20 11:55:34
 */
 
 (function(){
@@ -10,6 +10,7 @@
 
     app.controller('MixController', ['$http', '$rootScope', function($http, $rootScope){
         $rootScope.status = 0;
+        $rootScope.over   = 0;
         $rootScope.server = ['intro', 'biana', 'bips', 'iloops', 'guildify', 'modlink',
                              'vorffip', 'mvorffip', 'vdock', 'pipred', 'pcrpidb', 'pcpriw'];
         $http.get('./app/content/interactoMIX.json').success(function(data){

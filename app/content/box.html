@@ -1,23 +1,25 @@
 <div class="box">
     <span class="horiz-flag flag-top" ng-bind-html="sinfo.getCurrentTitle()">
     </span>
-    <span class="inner-content">
-        {{content[server[status]]['main']}}
+    <span class="ball" ng-show="!sinfo.isIntro()" ng-click="sinfo.resetStatus()">
+        <i class="fa fa-home"></i>
+    </span>
+    <span class="inner-content" ng-bind-html="content[server[status]]['main']">
     </span>
     <span class="horiz-flag flag-bottom">
         <div class="flag-half-left" ng-show="!sinfo.isIntro()">
             <a href="{{content[server[status]]['url']}}" target="_blank">
-                SERVER
+                <i class="fa fa-server"></i> SERVER
             </a>
         </div>
         <div class="flag-half-right" ng-show="!sinfo.isIntro()">
             <a href="{{content[server[status]]['cite']}}" target="_blank">
-                CITATION
+                <i class="fa fa-file-text"></i> CITATION
             </a>
         </div>
         <div ng-show="sinfo.isIntro()">
             <a href="{{content[server[status]]['cite']}}" target="_blank">
-                CITATION
+                <i class="fa fa-file-text"></i> CITATION
             </a>
         </div>
     </span>
