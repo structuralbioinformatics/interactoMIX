@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head profile="http://www.w3.org/2005/10/profile">
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0">
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,700'  rel='stylesheet' type='text/css'>
@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="app/vendor/fontawesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="app/self/css/app.css">
         <title>interactoMIX</title>
+        <link rel="icon" type="image/png" href="app/content/favicon.png">
     </head>
     <body ng-app="interactomix" ng-controller="MixController as mc">
         <div class="row">
@@ -33,11 +34,14 @@
             <a href="https://angularjs.org/" target="_blank">AngularJS</a>, 
             <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> and 
             <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Fontawesome</a>.
-            {{mc.currentDate() | date:'yyyy'}}
+            {{mc.currentDate() | date:'yyyy'}} 
+            <a href="https://github.com/jaumebonet/interactoMIX" target="_blank">
+                <i class="fa fa-github" tooltip-placement="top" tooltip="Get the source code in Github!"></i>
+            </a>
         </div>
         <script type="text/javascript" src="app/vendor/angular/angular.min.js"></script>
         <script type="text/javascript" src="app/vendor/angular-sanitize/angular-sanitize.min.js"></script>
-
+        <script type="text/javascript" src="app/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
         <script type="text/javascript" src="app/self/js/bullseye.js"></script>
         <script type="text/javascript" src="app/self/js/box.js"></script>
         <script type="text/javascript" src="app/self/js/app.js"></script>

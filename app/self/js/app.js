@@ -2,11 +2,11 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:25:18
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-20 12:45:16
+* @Last Modified time: 2015-05-20 14:13:53
 */
 
 (function(){
-    var app = angular.module('interactomix', ['bullseye', 'info']);
+    var app = angular.module('interactomix', ['bullseye', 'info', 'ui.bootstrap']);
 
     app.controller('MixController', ['$http', '$rootScope', function($http, $rootScope){
         $rootScope.status = 0;
