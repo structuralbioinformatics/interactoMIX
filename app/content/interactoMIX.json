@@ -37,13 +37,13 @@
     "vorffip":  {
         "title": "VORFFIP",
         "main" : "",
-        "url"  : "www.bioinsilico.org/VORFFIP/",
+        "url"  : "http://www.bioinsilico.org/VORFFIP/",
         "cite" : "http://dx.doi.org/10.1186/1471-2105-12-352"
     },
     "mvorffip": {
         "title": "M-VORFFIP",
         "main" : "",
-        "url"  : "www.bioinsilico.org/MVORFFIP/",
+        "url"  : "http://www.bioinsilico.org/MVORFFIP/",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/bts269"
     },
     "vdock":    {
