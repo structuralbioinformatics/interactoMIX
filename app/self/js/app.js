@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:25:18
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-20 11:55:34
+* @Last Modified time: 2015-05-20 12:45:16
 */
 
 (function(){
@@ -16,11 +16,27 @@
         $http.get('./app/content/interactoMIX.json').success(function(data){
             $rootScope.content = data;
         });
-        // this.content = new Array();
-        // this.content = ['education', 'experience', 'publications', 'grants'];
 
         this.currentDate = function(){
             return new Date();
         };
     }]);
+
+    app.directive('pickHeight', function() {
+        return {
+            restrict: 'A',
+            link: function(scope, element) {
+                scope.beh = element[0].offsetHeight;
+            }
+        };
+    });
+    app.directive('setHeight', function($window) {
+        return {
+            restrict: 'A',
+            link: function(scope, element) {
+                element.css('height', (scope.beh - 15) + "px");
+                angular.element($window).triggerHandler('resize')
+            }
+        };
+    });
 })();
