@@ -7,66 +7,100 @@
     "biana":    {
         "title": "BIANA",
         "main" : "",
+        "pic"  : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://sbi.imim.es/web/index.php/research/servers/biana?page=biana.server",
         "cite" : "http://dx.doi.org/10.1186/1471-2105-11-56"
     },
     "bips":     {
         "title": "BIPS",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://sbi.imim.es/web/index.php/research/servers/bips",
         "cite" : "http://dx.doi.org/10.1093/nar/gks553"
     },
     "iloops":   {
         "title": "iLoops",
-        "main" : "",
+        "main" : "Based on <a href=\"http://sbi.imim.es/archdb/\" target=\"_blank\">ArchDB</a>'s classification of super-secondary structures (<a href=\"http://dx.doi.org/10.1515/bams-2014-0016\" target=\"_blank\">Smotifs</a>), the <b>iLoops Server</b> exploits the <a href=\"http://dx.doi.org/10.1016/j.jmb.2013.01.014\" target=\"_blank\">funnel-like intermolecular energy landscape theory</a> by mapping information of known PPIs and known non-interacting proteins (NPIs) to predict new protein-protein interactions.",
+        "aim"  : "Assess the probability of a pair of proteins to interact or not interact.",
+        "in"   : "The user must provide a set of FASTA protein sequences and up to 25 interactions to test. Complementary parameters can be selected depending on the user's interests.",
+        "out"  : "For each requested protein-protein relation, the server provides a boolean prediction as if the relation is PPI or NPI. Furthermore, each prediction can be explored as to examine Smotif relations that statistically favour or disfavour the interaction.",
         "url"  : "http://sbi.imim.es/iLoopsServer/",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/btt401"
     },
     "guildify": {
         "title": "GUILDify",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://sbi.imim.es/web/GUILDify.php",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu092"
     },
     "modlink":  {
         "title": "ModLink<sup>+</sup>",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://sbi.imim.es/modlink/",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/btp238"
     }, 
     "vorffip":  {
         "title": "VORFFIP",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://www.bioinsilico.org/VORFFIP/",
         "cite" : "http://dx.doi.org/10.1186/1471-2105-12-352"
     },
     "mvorffip": {
         "title": "M-VORFFIP",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://www.bioinsilico.org/MVORFFIP/",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/bts269"
     },
     "vdock":    {
         "title": "V-D<sup>2</sup>OCK",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://www.bioinsilico.org/VD2OCK",
         "cite" : "http://dx.doi.org/10.1371/journal.pone.0118107"
     },
     "pipred":   {
         "title": "PiPreD",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://www.bioinsilico.org/PIPRED",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu838"
     },
     "pcrpidb":  {
         "title": "PCRPi-DB",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://www.bioinsilico.org/PCRPIDB",
         "cite" : "http://dx.doi.org/10.1093/nar/gkq1068"
     },
     "pcpriw":   {
         "title": "PCPRi-W",
         "main" : "",
+        "aim"  : "",
+        "in"   : "",
+        "out"  : "",
         "url"  : "http://www.bioinsilico.org/PCRPi",
         "cite" : "http://dx.doi.org/10.1371/journal.pone.0012352"
     }

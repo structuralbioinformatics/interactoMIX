@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-20 12:21:30
+* @Last Modified time: 2015-05-23 23:14:28
 */
 html {
   position: relative;
@@ -71,7 +71,12 @@ body:before {
     width:    100%;
     text-align: justify;
 }
-
+.minititle {
+    font-weight: bold;
+}
+.section {
+    margin-top: 5px;
+}
 .ball {
     -webkit-box-shadow:    0px 1px 1px rgba(0, 0, 0, 0.35);
     -moz-box-shadow:       0px 1px 1px rgba(0, 0, 0, 0.35);
