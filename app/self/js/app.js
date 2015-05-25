@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:25:18
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-20 14:13:53
+* @Last Modified time: 2015-05-25 12:37:36
 */
 
 (function(){
@@ -36,6 +36,23 @@
             link: function(scope, element) {
                 element.css('height', (scope.beh - 15) + "px");
                 angular.element($window).triggerHandler('resize')
+            }
+        };
+    });
+    app.directive('isolateScrolling', function () {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attr) {
+              element.bind('mousewheel', function (e) {
+                if ((e.deltaY > 0 && this.clientHeight + this.scrollTop == this.scrollHeight) ||
+                    (e.deltaY < 0 && this.scrollTop == 0)) {
+                  e.stopPropagation();
+                  e.preventDefault();
+                  return false;
+                }
+
+                return true;
+              });
             }
         };
     });

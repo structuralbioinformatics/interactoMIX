@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-23 23:14:28
+* @Last Modified time: 2015-05-25 12:41:35
 */
 html {
   position: relative;
@@ -11,6 +11,7 @@ html {
 body {
   background-color: #cfced0;
   height:           100%;
+  overflow: hidden;
 }
 body:before {
     content:    "";
@@ -73,6 +74,8 @@ body:before {
 }
 .minititle {
     font-weight: bold;
+    text-decoration: underline;
+    font-size: 110%;
 }
 .section {
     margin-top: 5px;
