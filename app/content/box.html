@@ -21,11 +21,14 @@
             <span class="minititle">OUTPUT:</span>
             <span ng-bind-html="content[server[status]]['out']"></span>
         </div>
+        <div class="section" ng-if="content[server[status]]['ext']">
+            <span ng-bind-html="content[server[status]]['ext']"></span>
+        </div>
     </div>
     <div class="horiz-flag flag-bottom">
         <div class="flag-half-left" ng-show="!sinfo.isIntro()">
             <a href="{{content[server[status]]['url']}}" target="_blank">
-                <i class="fa fa-server"></i> SERVER
+                <i class="fa fa-{{content[server[status]]['type']}}"></i> {{content[server[status]]['type']}}
             </a>
         </div>
         <div class="flag-half-right" ng-show="!sinfo.isIntro()">

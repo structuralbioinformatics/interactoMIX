@@ -12,7 +12,8 @@
         "in"   : "",
         "out"  : "",
         "url"  : "http://sbi.imim.es/web/index.php/research/servers/biana?page=biana.server",
-        "cite" : "http://dx.doi.org/10.1186/1471-2105-11-56"
+        "cite" : "http://dx.doi.org/10.1186/1471-2105-11-56",
+        "type" : "database"
     },
     "bips":     {
         "title": "BIPS",
@@ -21,7 +22,9 @@
         "in"   : "",
         "out"  : "",
         "url"  : "http://sbi.imim.es/web/index.php/research/servers/bips",
-        "cite" : "http://dx.doi.org/10.1093/nar/gks553"
+        "cite" : "http://dx.doi.org/10.1093/nar/gks553",
+        "type" : "server"
+
     },
     "iloops":   {
         "title": "iLoops",
@@ -30,7 +33,8 @@
         "in"   : "The user must provide a set of FASTA protein sequences and up to 25 interactions to test. Complementary parameters can be selected depending on the user's interests.",
         "out"  : "For each requested protein-protein relation, the server provides a boolean prediction as if the relation is PPI or NPI. Furthermore, each prediction can be explored as to examine Smotif relations that statistically favour or disfavour the interaction.",
         "url"  : "http://sbi.imim.es/iLoopsServer/",
-        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btt401"
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btt401",
+        "type" : "server"
     },
     "guildify": {
         "title": "GUILDify",
@@ -39,7 +43,8 @@
         "in"   : "The user needs only to provide keywords of their diesase of interest to the server and select the model species to search upon.",
         "out"  : "A table with the scores for all the nodes in the build network are provided together with an interactive vidalization of the network. All the data can be download for further study by the user.",
         "url"  : "http://sbi.imim.es/web/GUILDify.php",
-        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu092"
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu092",
+        "type" : "server"
     },
     "modlink":  {
         "title": "ModLink<sup>+</sup>",
@@ -48,7 +53,8 @@
         "in"   : "the user has to provide the FASTA formatatd sequence of the query protein, and select the preferred method to detect homology. Additionally, the user can also provide the FASTA sequences of other proteins known to interact with the query.",
         "out"  : "The server returns the models of the best structural domains that could be assigned to the query together with the corresponding lists of the PPIs that allowed assigning the different structural domains.",
         "url"  : "http://sbi.imim.es/modlink/",
-        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btp238"
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btp238",
+        "type" : "server"
     }, 
     "vorffip":  {
         "title": "VORFFIP",
@@ -57,7 +63,8 @@
         "in"   : "The basic input required is a PDB coordinate file. A part from that the user is able to tweak some paramenters in order to better fit their needs.",
         "out"  : "A <a href=\"http://jmol.sourceforge.net/\" target=\"_blank\">Jmol</a> panel is given to the user mapping VORFFIP scores over the protein's surface. Furthermore, both the scores and a new coordinate file (PDB) with recalculated B-factors are provided to the user for download.",
         "url"  : "http://www.bioinsilico.org/VORFFIP/",
-        "cite" : "http://dx.doi.org/10.1186/1471-2105-12-352"
+        "cite" : "http://dx.doi.org/10.1186/1471-2105-12-352",
+        "type" : "server"
     },
     "mvorffip": {
         "title": "M-VORFFIP",
@@ -66,7 +73,8 @@
         "in"   : "A simple PDB coordinate file is the only input required by the server.",
         "out"  : "Prediction scores for the residues of the protein and for each of the four binding targets are given to the user as well as <a href=\"http://jmol.sourceforge.net/\" target=\"_blank\">Jmol</a> representations for each one of them. All the produced data can be downloaded by the user for further study.",
         "url"  : "http://www.bioinsilico.org/MVORFFIP/",
-        "cite" : "http://dx.doi.org/10.1093/bioinformatics/bts269"
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/bts269",
+        "type" : "server"
     },
     "vdock":    {
         "title": "V-D<sup>2</sup>OCK",
@@ -75,16 +83,19 @@
         "in"   : "V-D<sup>2</sup>OCK requires two PDB coordinate files to perform the docking. Additionally, the user can select extra scoring functions, the ability to add hidrogens to each structure and the tolerance to cluster decoys.",
         "out"  : "The server provides with tables detailing the predicted interaction sites as well as images of the best scored quaternary structures. As with the other servers, all the generated data can be downloaded by the user for further exploring.",
         "url"  : "http://www.bioinsilico.org/VD2OCK",
-        "cite" : "http://dx.doi.org/10.1371/journal.pone.0118107"
+        "cite" : "http://dx.doi.org/10.1371/journal.pone.0118107",
+        "type" : "server"
     },
     "pipred":   {
         "title": "PiPreD",
         "main" : "The modulation of PPIs offers an enormous potential for the discovery of novel and important therapeutics and it is a the heart of renewed efforts in the biotech industry. <b>PiPreD</b>, is a novel, structure- and knowledge-based, approach to model the conformation of orthosteric peptides (those targeting protein interfaces). It relies on a library of structural motifs derived from interfaces and it uses native structural elements of the target-interface. The search and sampling of peptides covers the entire interface, systematic and comprehensive exploration without biases toward specific regions, thus the conformation of peptides is not biased.",
-        "aim"  : "The more direct application of the server relates to the design of peptides to target specific interactions in protein complexes. These peptides, once experimentally validated, can represent the starting point for the development of novel therapeutic agents or as lab reagents.",
-        "in"   : "As with the other structure-based methods of the <b>InteractoMIX suite</b>, the required input is a PDB coordinate file of the protein-protein complex.",
-        "out"  : "***",
+        "aim"  : "The more direct usage of the application relates to the design of peptides to target specific interactions in protein complexes. These peptides, once experimentally validated, can represent the starting point for the development of novel therapeutic agents or as lab reagents.",
+        "in"   : "",
+        "out"  : "",
+        "ext"  : "Contrary to the rest of the tools in the <b>InteractoMIX suite</b>, the computational requirements of <b>PiPreD</b> makes it difficult to provide the service as a web-app. Thus, a guide is provided for the local installation of the software.",
         "url"  : "http://www.bioinsilico.org/PIPRED",
-        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu838"
+        "cite" : "http://dx.doi.org/10.1093/bioinformatics/btu838",
+        "type" : "download"
     },
     "pcrpidb":  {
         "title": "PCRPi-DB",
@@ -93,7 +104,8 @@
         "in"   : "The repository can be browsed and queried in many different ways. Each one of them clearly stated in its <a href=\"http://www.bioinsilico.org/cgi-bin/PCRPIDB/htmlPCRPI/help#use\" target=\"_blank\">help page</a>.",
         "out"  : "The structural information queried can be visualized using a bespoken molecular visualizer and a series of tables listing the data in a comprehensive manner.",
         "url"  : "http://www.bioinsilico.org/PCRPIDB",
-        "cite" : "http://dx.doi.org/10.1093/nar/gkq1068"
+        "cite" : "http://dx.doi.org/10.1093/nar/gkq1068",
+        "type" : "database"
     },
     "pcpriw":   {
         "title": "PCPRi-W",
@@ -102,6 +114,7 @@
         "in"   : "The mandatory input is a PDB coordinate file of a protein-protein complex. This file can be either uploaded or directly picked from the <a href=\"http://www.rcsb.org/pdb/home/home.do\" target=\"_blank\">Protein Data Bank</a>. Some supplementary parameters can be tweaked in order to fit the user's needs.",
         "out"  : "Mutiple files are provided to the user. A part from the original PDB file, a remediated PDB file where quality checks have been perfomed and a B-factor substituted PDB file are provided. Files listing the atomic interactions at the interface of the selected chain and containing a list of predicted hot spot residues ranked by probability are also given to the user to download.",
         "url"  : "http://www.bioinsilico.org/PCRPi",
-        "cite" : "http://dx.doi.org/10.1371/journal.pone.0012352"
+        "cite" : "http://dx.doi.org/10.1371/journal.pone.0012352",
+        "type" : "server"
     }
 }

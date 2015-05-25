@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-25 12:41:35
+* @Last Modified time: 2015-05-25 15:53:23
 */
 html {
   position: relative;
@@ -127,6 +127,7 @@ body:before {
     font-size:          25px;
     width:              101%;
     left:               -2px;
+    text-transform:     uppercase;
 }
 .flag-top {
     top:                15px;
