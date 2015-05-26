@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:25:18
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-25 12:37:36
+* @Last Modified time: 2015-05-26 13:06:07
 */
 
 (function(){
@@ -26,7 +26,9 @@
         return {
             restrict: 'A',
             link: function(scope, element) {
-                scope.beh = element[0].offsetHeight;
+                scope.$watch(function() {
+                    scope.beh = element[0].offsetHeight;
+                });
             }
         };
     });
@@ -34,8 +36,11 @@
         return {
             restrict: 'A',
             link: function(scope, element) {
-                element.css('height', (scope.beh - 15) + "px");
-                angular.element($window).triggerHandler('resize')
+                var resize = function(){
+                    element.css('height', (scope.beh - 15) + "px");
+                    angular.element($window).triggerHandler('resize');
+                };
+                scope.$watch('beh', function() {resize();});
             }
         };
     });

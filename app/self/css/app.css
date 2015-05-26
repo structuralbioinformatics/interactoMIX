@@ -2,15 +2,14 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-25 15:53:23
+* @Last Modified time: 2015-05-26 12:42:19
 */
-html {
-  position: relative;
-  height:   100%;
+html, body {
+    min-height: 100% !important;
+    height: 100%;
 }
 body {
   background-color: #cfced0;
-  height:           100%;
   overflow: hidden;
 }
 body:before {
@@ -19,21 +18,22 @@ body:before {
     height:     5px;
     background: black;
     position:   fixed;
-    width:      200%;
+    width:      100%;
     z-index:    1000;
 }
 
 .main {
-    padding-top: 35px;
-    display:     table;
-    width:       100%;
-    height:      100%;
+    padding-top:    35px;
+    padding-bottom: 42px;
+    width:          100%;
+    height:         100%;
+    overflow:       auto;
+    min-width:      1200px;
 }
 
 #bullseye {
     font-family:    'Nunito';
     font-weight:    700;
-    display:        table-cell;
     vertical-align: middle;
 }
 #bullseye svg {
@@ -177,29 +177,33 @@ body:before {
 
 .inactive {
     -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    filter:         grayscale(100%);
 }
 .active {
     -webkit-filter: grayscale(0);
     -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    filter: none;
+    filter:         grayscale(0%);
+    filter:         none;
 }
+
 .footer {
     font-family:      'Nunito';
     font-weight:      400;
     background-color: black;
-    position:         absolute;
-    bottom:           0;
+    z-index:          1000;
     width:            100%;
     padding-top:      10px;
     padding-bottom:   10px;
     font-size:        110%;
+    height:           42px;
     color:            white;
     text-align:       center;
+    position:         absolute;
+    left:             0;
+    bottom:           0;
     z-index:          1100; 
 }
 .footer a{
