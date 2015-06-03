@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-06-02 10:52:57
+* @Last Modified time: 2015-06-03 16:47:14
 */
 html, body {
     min-height: 100% !important;
@@ -83,9 +83,15 @@ body:before {
     text-align: justify;
 }
 .minititle {
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 110%;
+    font-weight:         bold;
+    text-decoration:     underline;
+    font-size:           110%;
+    -webkit-user-select: none;
+    -khtml-user-select:  none;
+    -moz-user-select:    none;
+    -ms-user-select:     none;
+    -o-user-select:      none;
+    user-select:         none;
 }
 .section {
     margin-top: 5px;
@@ -121,23 +127,29 @@ body:before {
 }
 
 .horiz-flag {
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow:    0px 1px 1px rgba(0, 0, 0, 0.35);
-    box-shadow:         0px 1px 1px rgba(0, 0, 0, 0.35);
-    display:            -moz-inline-box;
-    -moz-box-orient:    vertical;
-    display:            inline-block;
-    vertical-align:     middle;
-    height:             40px;
-    line-height:        40px;
-    position:           absolute;
-    text-align:         center;
-    color:              white;
-    font-weight:        700;
-    font-size:          25px;
-    width:              101%;
-    left:               -2px;
-    text-transform:     uppercase;
+    -webkit-box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow:     0px 1px 1px rgba(0, 0, 0, 0.35);
+    box-shadow:          0px 1px 1px rgba(0, 0, 0, 0.35);
+    -webkit-user-select: none;
+    -khtml-user-select:  none;
+    -moz-user-select:    none;
+    -ms-user-select:     none;
+    -o-user-select:      none;
+    user-select:         none;
+    display:             -moz-inline-box;
+    -moz-box-orient:     vertical;
+    display:             inline-block;
+    vertical-align:      middle;
+    height:              40px;
+    line-height:         40px;
+    position:            absolute;
+    text-align:          center;
+    color:               white;
+    font-weight:         700;
+    font-size:           25px;
+    width:               101%;
+    left:                -2px;
+    text-transform:      uppercase;
 }
 .flag-top {
     top:                15px;
