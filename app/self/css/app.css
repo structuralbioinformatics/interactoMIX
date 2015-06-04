@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-06-03 16:47:14
+* @Last Modified time: 2015-06-04 17:16:37
 */
 html, body {
     min-height: 100% !important;
@@ -35,10 +35,13 @@ body:before {
     height: 42px;
 }
 
+#content-wrapper {
+    padding-top: 3%;
+}
+
 #bullseye {
     font-family:         'Nunito';
     font-weight:         700;
-    vertical-align:      middle;
     -webkit-user-select: none;
     -khtml-user-select:  none;
     -moz-user-select:    none;
@@ -81,6 +84,7 @@ body:before {
     height:   100%;
     width:    100%;
     text-align: justify;
+    font-size: 1.5vh;
 }
 .minititle {
     font-weight:         bold;
