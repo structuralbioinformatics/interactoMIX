@@ -47,9 +47,9 @@
     },
     "modlink":  {
         "title": "ModLink<sup>+</sup>",
-        "main" : "<b>ModLink<sup>+</sup></b> allows an accurate prediction of the fold of a protein given its sequence and structural modeling. It combines advanced remote homology detection combining  known and inferred interactomic data unified in <b>BIANA</b> and predicted by <b>BIPS</b> respectively. By using PPIs, <b>ModLink<sup>+</sup></b> is able to select the correct structural template for a given query protein even at low sequence simarity to any known templte. ",
-        "aim"  : "The main use of <b>ModLink<sup>+</sup></b> is to provide a series of structurally similar hits to a query protein and generate a three-dimensional model of its tertiary structure.",
-        "in"   : "Users have to provide the sequence of the protien of interest in FASTA format, and select the preferred method to detect homology. Additionally, users can also provide a list of sequences in FASTA format for proteins known to interact with the query.",
+        "main" : "<b>ModLink<sup>+</sup></b> is a web server that allows modelling the structure of a given query protein provided its sequence. It combines advanced remote homology detection tools together with known and inferred interactomic data, as unified in <b>BIANA</b> and predicted by <b>BIPS</b>, respectively. The use of PPIs allows <b>ModLink<sup>+</sup></b> to select the correct structural template to model-build the query protein, even when the sequence similarity between the query and the template is low.",
+        "aim"  : "The main use of <b>ModLink<sup>+</sup></b> is to provide a series of three-dimensional models of the tertiary structure of a particular protein.",
+        "in"   : "Users have to provide the sequence of the protein of interest, in FASTA format, and select the preferred method to detect homologous templates. Additionally, users can also provide a list of sequences, in FASTA format, for proteins known to interact with the query.",
         "out"  : "The server returns the models of the best structural domains that could be assigned to the query together with the corresponding lists of the PPIs that allowed assigning the different structural domains.",
         "url"  : "http://sbi.imim.es/modlink/",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/btp238",
