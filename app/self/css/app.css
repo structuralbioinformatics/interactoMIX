@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-06-04 18:42:23
+* @Last Modified time: 2015-06-12 11:24:20
 */
 html, body {
     min-height: 100% !important;
@@ -11,7 +11,6 @@ html, body {
 body {
   background-color: #cfced0;
   overflow:         hidden;
-  min-width:        1200px;
 }
 body:before {
     content:    "";
@@ -37,6 +36,7 @@ body:before {
 
 #content-wrapper {
     padding-top: 3%;
+    min-width:   1000px;
 }
 
 #bullseye {
@@ -231,7 +231,7 @@ body:before {
     left:             0;
     bottom:           0;
     z-index:          1100; 
-    min-width:      1200px;
+    min-width:        1000px;
 }
 .footer a{
     font-weight: 700;
@@ -239,4 +239,3 @@ body:before {
 .footer a:hover {
     color: #cfced0;
 }
-
