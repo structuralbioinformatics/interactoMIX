@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-06-12 11:24:20
+* @Last Modified time: 2015-06-17 15:21:17
 */
 html, body {
     min-height: 100% !important;
@@ -78,13 +78,13 @@ body:before {
     font-weight:          400;
 }
 .inner-content {
-    display:  inline-block;
-    position: relative;
-    overflow: auto;
-    height:   100%;
-    width:    100%;
+    display:    inline-block;
+    position:   relative;
+    overflow:   auto;
+    height:     100%;
+    width:      100%;
     text-align: justify;
-    font-size: 1.5vm;
+    font-size:  1.7vmin;
 }
 .minititle {
     font-weight:         bold;
