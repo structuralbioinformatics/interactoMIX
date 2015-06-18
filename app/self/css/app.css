@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
 * @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-06-17 15:21:17
+* @Last Modified time: 2015-06-18 19:16:50
 */
 html, body {
     min-height: 100% !important;
@@ -84,7 +84,7 @@ body:before {
     height:     100%;
     width:      100%;
     text-align: justify;
-    font-size:  1.7vmin;
+    font-size:  2vmin;
 }
 .minititle {
     font-weight:         bold;
