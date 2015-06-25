@@ -51,7 +51,7 @@
         "aim"  : "The main use of <b>ModLink<sup>+</sup></b> is to provide a series of three-dimensional models of the tertiary structure of a particular protein.",
         "in"   : "Users have to provide the sequence of the protein of interest, in FASTA format, and select the preferred method to detect homologous templates. Additionally, users can also provide a list of sequences, in FASTA format, for proteins known to interact with the query.",
         "out"  : "The server returns the models of the best structural domains that could be assigned to the query together with the corresponding lists of the PPIs that allowed assigning the different structural domains.",
-        "url"  : "http://sbi.imim.es/modlink/",
+        "url"  : "http://sbi.imim.es/modlink+/",
         "cite" : "http://dx.doi.org/10.1093/bioinformatics/btp238",
         "type" : "server"
     }, 
