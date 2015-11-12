@@ -1,4 +1,4 @@
-<div class="box" set-height>
+<div class="box" ng-class="{'intro-box': sinfo.isIntro()}" set-height>
     <div class="horiz-flag flag-top" ng-bind-html="sinfo.getCurrentTitle()">
     </div>
     <div class="ball" ng-show="!sinfo.isIntro()" ng-click="sinfo.resetStatus()">
