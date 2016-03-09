@@ -12,6 +12,9 @@
         <link rel="icon" type="image/png" href="app/content/favicon.png">
     </head>
     <body ng-app="interactomix" ng-controller="MixController as mc">
+        <div class="corner-ribbon top-right sticky shadow" ng-show="!mc.isOfficialURL()">
+        Oficial version <a href="http://interactomix.com">here</a>
+        </div>
         <div class="row main">
             <div class="col-xs-1"></div>
             <div id="content-wrapper" class="col-xs-10">
@@ -25,6 +28,10 @@
                 </div>
             </div>
             <div class="col-xs-1"></div>
+        </div>
+        <div class="cookie_foot" ng-init="cookie=true" ng-show="cookie">
+            This website uses <a href="http://www.google.com/analytics/learn/privacy.html" target="_blank">GA cookies</a> to collect anonymous usage statistics.
+            <button type="button" class="btn btn-info btn-xs" ng-click="cookie=false">OK!</button>
         </div>
         <div class="footer">
             A joined effort of the 
@@ -45,5 +52,14 @@
         <script type="text/javascript" src="app/self/js/bullseye.js"></script>
         <script type="text/javascript" src="app/self/js/box.js"></script>
         <script type="text/javascript" src="app/self/js/app.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-74877325-1', 'auto');
+          ga('send', 'pageview');
+        </script>
     </body>
 </html>

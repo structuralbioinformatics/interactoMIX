@@ -1,14 +1,14 @@
 /* 
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:25:18
-* @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-05-26 13:06:07
+* @Last Modified by:   Jaume Bonet
+* @Last Modified time: 2016-03-09 14:12:59
 */
 
 (function(){
     var app = angular.module('interactomix', ['bullseye', 'info', 'ui.bootstrap']);
 
-    app.controller('MixController', ['$http', '$rootScope', function($http, $rootScope){
+    app.controller('MixController', ['$http', '$location', '$rootScope', function($http, $location, $rootScope){
         $rootScope.status = 0;
         $rootScope.over   = 0;
         $rootScope.server = ['intro', 'biana', 'bips', 'iloops', 'guildify', 'modlink',
@@ -20,6 +20,9 @@
         this.currentDate = function(){
             return new Date();
         };
+        this.isOfficialURL = function(){
+            return $location.absUrl().split('?')[0] == "http://jaumebonet.cat/interactoMIX";
+        }
     }]);
 
     app.directive('pickHeight', function() {

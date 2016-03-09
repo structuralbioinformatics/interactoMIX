@@ -1,8 +1,8 @@
 /* 
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:13:04
-* @Last Modified by:   jaumebonet
-* @Last Modified time: 2015-11-12 11:23:24
+* @Last Modified by:   Jaume Bonet
+* @Last Modified time: 2016-03-09 14:00:27
 */
 html, body {
     min-height: 100% !important;
@@ -221,11 +221,37 @@ body:before {
     filter:         none;
 }
 
+.cookie_foot {
+    font-family:      'Nunito';
+    font-weight:      400;
+    z-index:          1000;
+    width:            100%;
+    padding-top:      5px;
+    padding-bottom:   5px;
+    font-size:        90%;
+    color:            black;
+    text-align:       center;
+    position:         absolute;
+    left:             0;
+    bottom:           42px;
+    min-width:        1000px;
+    border-top:       1px dashed black;
+    background-color: #fffff5;
+}
+.cookie_foot a {
+    font-weight: 700;
+}
+.cookie_foot a:hover {
+    color: #cfced0;
+}
+.cookie_foor button {
+    float: right;
+}
+
 .footer {
     font-family:      'Nunito';
     font-weight:      400;
     background-color: black;
-    z-index:          1000;
     width:            100%;
     padding-top:      10px;
     padding-bottom:   10px;
@@ -244,4 +270,66 @@ body:before {
 }
 .footer a:hover {
     color: #cfced0;
+}
+
+.corner-ribbon{
+    font-family:       'Nunito';
+    font-weight:       400;
+    font-size:         85%;
+    width:             200px;
+    background:        #fffff5;
+    position:          absolute;
+    top:               25px;
+    left:              -50px;
+    text-align:        center;
+    line-height:       50px;
+    letter-spacing:    1px;
+    color:             black;
+    transform:         rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index:           1100;
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right{
+  top: 25px;
+  right: -50px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-left{
+  top: auto;
+  bottom: 25px;
+  left: -50px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.bottom-right{
+  top: auto;
+  right: -50px;
+  bottom: 25px;
+  left: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
