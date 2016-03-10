@@ -2,7 +2,7 @@
 * @Author: jaumebonet
 * @Date:   2015-05-19 14:25:18
 * @Last Modified by:   Jaume Bonet
-* @Last Modified time: 2016-03-09 14:18:08
+* @Last Modified time: 2016-03-10 10:22:08
 */
 
 (function(){
@@ -21,7 +21,7 @@
             return new Date();
         };
         this.isOfficialURL = function(){
-            return $location.absUrl() == "http://interactomix.com";
+            return $location.absUrl() == "http://interactomix.com/";
         }
     }]);
 
