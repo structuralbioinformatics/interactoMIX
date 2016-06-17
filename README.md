@@ -2,13 +2,14 @@
 
 The landing page for the SBI - Bioinsilico servers mix
 
-See how it looks like in the [github page](http://jaumebonet.github.io/interactoMIX/).
+See how it looks like in the [github page](http://structuralbioinformatics.github.io/interactoMIX/).
 
 Find the **official version** of this page at [Interactomix](http://interactomix.com/)
 
 Tested in Chrome, Firefox, Safari and Opera.
 
-Please, report any bug to the [Github Project Issue Tracker](https://github.com/jaumebonet/interactoMIX/issues).
+Please, report any bug to the [Github Project Issue Tracker](https://github.com/structuralbioinformatics/interactoMIX/issues).
+
 
 ## Citation
 
